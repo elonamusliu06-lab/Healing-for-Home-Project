@@ -5,59 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Portfolio | Healing for Home</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #0f0f0f; color: #ffffff; text-align: center; }
-        header { background-color: #e63946; padding: 60px 20px; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: #1a1a1a; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; height: 350px; object-fit: cover; }
-        .card-content { padding: 20px; text-align: left; }
-        .card-content h3 { color: #e63946; margin: 0 0 10px; font-size: 1.4em; }
-        .tag { background: #333; color: #e63946; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; font-weight: bold; display: inline-block; margin-bottom: 10px; }
-        footer { padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 40px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #0d0d0d; color: #ffffff; text-align: center; }
+        header { background: linear-gradient(rgba(230, 57, 70, 0.9), rgba(230, 57, 70, 0.9)), url('story.png'); background-size: cover; padding: 80px 20px; border-bottom: 5px solid #fff; }
+        .header-content h1 { font-size: 3em; margin: 0; text-transform: uppercase; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 20px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        
+        .card { background: #1a1a1a; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.4s; text-decoration: none; color: inherit; display: block; }
+        .card:hover { transform: translateY(-10px); border-color: #e63946; box-shadow: 0 10px 20px rgba(230, 57, 70, 0.2); }
+        .card img { width: 100%; height: 300px; object-fit: cover; }
+        .card-body { padding: 20px; text-align: left; }
+        .card-body h3 { color: #e63946; margin-top: 0; }
+        .tag { background: #333; color: #e63946; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        
+        .btn-visit { display: inline-block; background: #e63946; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; margin-top: 20px; font-weight: bold; }
+        footer { padding: 40px; color: #666; border-top: 1px solid #222; margin-top: 50px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>The Healing for Home Project</h1>
-    <p>Strategic Marketing & Social Impact Portfolio</p>
+    <div class="header-content">
+        <h1>Healing for Home</h1>
+        <p>Strategic Marketing Portfolio by <strong>Elona Musliu & Djellza</strong></p>
+        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="btn-visit">Follow the Impact</a>
+    </div>
 </header>
 
 <div class="container">
     <div class="gallery">
-        <div class="card">
-            <img src="15.02.2026_23.01.23_REC.png" alt="Heritage & Trust">
-            <div class="card-content">
-                <span class="tag">STORYTELLING</span>
-                <h3>Heritage & Trust</h3>
-                <p>Leveraging historical legacies of figures like Queen Geraldine to establish long-term brand credibility.</p>
+        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
+            <img src="story.png" alt="Storytelling">
+            <div class="card-body">
+                <span class="tag">BRANDING</span>
+                <h3>Heritage & Storytelling</h3>
+                <p>Building deep trust by connecting modern healthcare needs with historical resilience and the legacy of Queen Geraldine.</p>
             </div>
-        </div>
+        </a>
 
-        <div class="card">
-            <img src="15.02.2026_23.02.02_REC.png" alt="Urgency Marketing">
-            <div class="card-content">
-                <span class="tag">AWARENESS</span>
-                <h3>Urgency Marketing</h3>
-                <p>Creating immediate psychological urgency with high-impact visuals to address medical supply shortages.</p>
+        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
+            <img src="campaign.png" alt="Strategy">
+            <div class="card-body">
+                <span class="tag">STRATEGY</span>
+                <h3>$10K Fundraising Goal</h3>
+                <p>Developing a high-impact digital campaign to secure funding for medical kits in rural clinics across Kosovë.</p>
             </div>
-        </div>
+        </a>
 
-        <div class="card">
-            <img src="15.02.2026_23.00.17_REC.png" alt="On-Ground Impact">
-            <div class="card-content">
-                <span class="tag">TRANSPARENCY</span>
-                <h3>On-Ground Impact</h3>
-                <p>Showcasing real-world delivery logistics to maximize donor trust and social proof.</p>
+        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
+            <img src="impact.png" alt="Transparency">
+            <div class="card-body">
+                <span class="tag">SOCIAL PROOF</span>
+                <h3>Direct On-Ground Impact</h3>
+                <p>Ensuring transparency and donor confidence through real-time updates of medical supply distribution.</p>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 | Marketing Portfolio | Hosted via GitHub Pages</p>
+    <p>© 2026 | Marketing Portfolio | Let's heal home, together. ❤️</p>
 </footer>
 
 </body>
