@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketing Portfolio</title>
+    <meta name="google" content="notranslate">
+    <title>Marketing Portfolio | Elona Musliu</title>
     <style>
-        /* বেসিক স্টাইল */
-        body { font-family: sans-serif; margin: 0; background-color: #0d0d0d; color: #fff; text-align: center; }
-        header { background: #e63946; padding: 40px 10px; border-bottom: 5px solid #fff; }
-        
-        /* গ্যালারি এবং কার্ড ডিজাইন */
-        .container { padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .card { background: #1a1a1a; width: 100%; max-width: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
-        
-        /* ছবি সব ডিভাইসে পারফেক্ট দেখাবে */
-        .card img { 
-            width: 100%; 
-            height: 250px; 
-            object-fit: cover; 
-            display: block;
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; background-color: #0d0d0d; color: #ffffff; text-align: center; 
         }
+        header { background: #e63946; padding: 50px 20px; border-bottom: 5px solid #fff; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 15px; }
         
-        .card-body { padding: 15px; text-align: left; }
-        .card-body h3 { color: #e63946; margin: 0 0 10px; }
+        .gallery { 
+            display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; 
+        }
 
-        /* ল্যাপটপ বা বড় স্ক্রিনের জন্য ৩টি কার্ড পাশাপাশি */
+        .card { 
+            background: #1a1a1a; border-radius: 15px; overflow: hidden; 
+            border: 1px solid #333; width: 100%; max-width: 350px; 
+        }
+
+        /* ফোল্ডার থেকে ছবি লোড করার স্টাইল */
+        .card img { 
+            width: 100%; height: 260px; object-fit: cover; display: block; 
+            background: #222;
+        }
+
+        .card-body { padding: 20px; text-align: left; }
+        .card-body h3 { color: #e63946; margin: 0 0 10px 0; }
+        .card-body p { font-size: 0.95rem; color: #ccc; line-height: 1.5; }
+
         @media (min-width: 768px) {
             .card { width: calc(33.33% - 20px); }
         }
+        footer { padding: 40px; color: #555; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -38,31 +47,36 @@
 </header>
 
 <div class="container">
-    <div class="card">
-        <img src="story1.png" alt="Heritage Branding">
-        <div class="card-body">
-            <h3>Heritage & Branding</h3>
-            <p>Building trust through historical storytelling and legacy.</p>
+    <div class="gallery">
+        <div class="card">
+            <img src="assets/story1.png" alt="Heritage">
+            <div class="card-body">
+                <h3>Heritage & Branding</h3>
+                <p>Building trust through historical storytelling and legacy.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <img src="campaign.png" alt="Campaign Strategy">
-        <div class="card-body">
-            <h3>$10K Strategy</h3>
-            <p>Digital fundraising management for healthcare support.</p>
+        <div class="card">
+            <img src="assets/campaign.png" alt="Strategy">
+            <div class="card-body">
+                <h3>$10K Strategy</h3>
+                <p>Digital fundraising management for healthcare support.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <img src="impact.png" alt="On-Ground Impact">
-        <div class="card-body">
-            <h3>On-Ground Impact</h3>
-            <p>Direct supply distribution and transparency updates.</p>
+        <div class="card">
+            <img src="assets/impact.png" alt="Impact">
+            <div class="card-body">
+                <h3>On-Ground Impact</h3>
+                <p>Direct supply distribution and transparency updates.</p>
+            </div>
         </div>
     </div>
 </div>
 
-<footer><p>© 2026 | Elona Musliu Portfolio</p></footer>
+<footer>
+    <p>© 2026 | Elona Musliu Portfolio</p>
+</footer>
+
 </body>
 </html>
