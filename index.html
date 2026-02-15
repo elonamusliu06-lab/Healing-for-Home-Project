@@ -3,41 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
     <title>Marketing Portfolio</title>
     <style>
-        * { box-sizing: border-box; }
+        /* বেসিক স্টাইল */
         body { font-family: sans-serif; margin: 0; background-color: #0d0d0d; color: #fff; text-align: center; }
-        header { background: #e63946; padding: 40px 15px; border-bottom: 5px solid #fff; }
-        .container { padding: 20px; max-width: 1200px; margin: auto; }
+        header { background: #e63946; padding: 40px 10px; border-bottom: 5px solid #fff; }
         
-        .gallery { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 20px; 
-            justify-content: center; 
-        }
-
-        .card { 
-            background: #1a1a1a; 
-            border-radius: 12px; 
-            overflow: hidden; 
-            border: 1px solid #333; 
-            width: 100%; 
-            max-width: 350px; /* ল্যাপটপে ৩টি পাশাপাশি দেখাবে, মোবাইলে ১টি */
-        }
-
+        /* গ্যালারি এবং কার্ড ডিজাইন */
+        .container { padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: #1a1a1a; width: 100%; max-width: 350px; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+        
+        /* ছবি সব ডিভাইসে পারফেক্ট দেখাবে */
         .card img { 
             width: 100%; 
             height: 250px; 
             object-fit: cover; 
             display: block;
         }
-
+        
         .card-body { padding: 15px; text-align: left; }
         .card-body h3 { color: #e63946; margin: 0 0 10px; }
-        .card-body p { font-size: 14px; color: #ccc; }
 
+        /* ল্যাপটপ বা বড় স্ক্রিনের জন্য ৩টি কার্ড পাশাপাশি */
         @media (min-width: 768px) {
             .card { width: calc(33.33% - 20px); }
         }
@@ -51,33 +38,31 @@
 </header>
 
 <div class="container">
-    <div class="gallery">
-        <div class="card">
-            <img src="story.png" alt="Heritage">
-            <div class="card-body">
-                <h3>Heritage & Branding</h3>
-                <p>Building trust through historical storytelling.</p>
-            </div>
+    <div class="card">
+        <img src="story1.png" alt="Heritage Branding">
+        <div class="card-body">
+            <h3>Heritage & Branding</h3>
+            <p>Building trust through historical storytelling and legacy.</p>
         </div>
+    </div>
 
-        <div class="card">
-            <img src="campaign.png" alt="Strategy">
-            <div class="card-body">
-                <h3>$10K Strategy</h3>
-                <p>Digital fundraising management for healthcare.</p>
-            </div>
+    <div class="card">
+        <img src="campaign.png" alt="Campaign Strategy">
+        <div class="card-body">
+            <h3>$10K Strategy</h3>
+            <p>Digital fundraising management for healthcare support.</p>
         </div>
+    </div>
 
-        <div class="card">
-            <img src="impact.png" alt="Impact">
-            <div class="card-body">
-                <h3>On-Ground Impact</h3>
-                <p>Direct supply distribution and transparency.</p>
-            </div>
+    <div class="card">
+        <img src="impact.png" alt="On-Ground Impact">
+        <div class="card-body">
+            <h3>On-Ground Impact</h3>
+            <p>Direct supply distribution and transparency updates.</p>
         </div>
     </div>
 </div>
 
-<footer><p>© 2026 | Elona Musliu</p></footer>
+<footer><p>© 2026 | Elona Musliu Portfolio</p></footer>
 </body>
 </html>
