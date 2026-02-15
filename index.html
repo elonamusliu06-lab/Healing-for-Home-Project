@@ -1,103 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Marketing Portfolio | Elona Musliu</title>
     <style>
-        /* বেসিক স্টাইল */
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #0d0d0d; color: #ffffff; text-align: center; overflow-x: hidden; }
-        
-        header { background: #e63946; padding: 40px 15px; border-bottom: 5px solid #fff; }
-        header h1 { font-size: 2em; margin: 0; }
-        header p { font-size: 1em; opacity: 0.9; }
-
-        .container { max-width: 100%; margin: 20px auto; padding: 10px; box-sizing: border-box; }
-
-        /* মোবাইল ফ্রেন্ডলি গ্যালারি (এটিই আসল সমাধান) */
-        .gallery { 
-            display: flex; 
-            flex-direction: column; /* মোবাইলে ছবিগুলো নিচে নিচে আসবে */
-            gap: 20px; 
-            align-items: center;
-        }
-
-        .card { 
-            background: #1a1a1a; 
-            border-radius: 15px; 
-            overflow: hidden; 
-            border: 1px solid #333; 
-            width: 95%; /* মোবাইলে স্ক্রিনের প্রায় পুরোটা জুড়ে থাকবে */
-            max-width: 400px;
-            text-decoration: none; 
-            color: inherit; 
-            display: block; 
-        }
-
-        .card img { 
-            width: 100%; 
-            height: auto; /* ছবির হাইট স্ক্রিন অনুযায়ী অটো হবে */
-            display: block;
-        }
-
+        body { font-family: sans-serif; margin: 0; background-color: #0d0d0d; color: #fff; text-align: center; }
+        header { background: #e63946; padding: 40px 10px; border-bottom: 4px solid #fff; }
+        .container { padding: 20px; }
+        .card { background: #1a1a1a; margin-bottom: 30px; border-radius: 12px; overflow: hidden; border: 1px solid #333; }
+        /* ছবির সাইজ ঠিক করা */
+        .card img { width: 100%; height: auto; display: block; background: #222; }
         .card-body { padding: 15px; text-align: left; }
-        .card-body h3 { color: #e63946; margin: 0 0 10px 0; font-size: 1.2em; }
-        .card-body p { font-size: 0.9em; line-height: 1.4; }
-
-        .btn { display: inline-block; background: #e63946; color: white; padding: 10px 20px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 15px; }
-
-        /* ল্যাপটপ বা বড় স্ক্রিনের জন্য স্টাইল */
-        @media (min-width: 768px) {
-            .gallery { 
-                flex-direction: row; 
-                flex-wrap: wrap; 
-                justify-content: center; 
-            }
-            .card { width: 300px; }
-            header h1 { font-size: 3em; }
-        }
-
-        footer { padding: 30px; color: #666; border-top: 1px solid #222; margin-top: 30px; }
+        .card-body h3 { color: #e63946; margin-top: 0; }
+        footer { padding: 20px; color: #666; font-size: 0.8em; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Healing for Home</h1>
-    <p>Strategic Marketing Portfolio</p>
-    <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="btn">Instagram</a>
+    <p>Marketing Portfolio</p>
 </header>
 
 <div class="container">
-    <div class="gallery">
-        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
-            <img src="story.png" alt="Branding">
-            <div class="card-body">
-                <h3>Heritage & Branding</h3>
-                <p>Building trust through historical storytelling and legacy.</p>
-            </div>
-        </a>
+    <div class="card">
+        <img src="15.02.2026_23.01.23_REC.png" alt="Storytelling">
+        <div class="card-body">
+            <h3>Heritage & Branding</h3>
+            <p>Building trust through historical legacy.</p>
+        </div>
+    </div>
 
-        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
-            <img src="campaign.png" alt="Strategy">
-            <div class="card-body">
-                <h3>$10K Strategy</h3>
-                <p>Digital fundraising management for healthcare support.</p>
-            </div>
-        </a>
+    <div class="card">
+        <img src="15.02.2026_23.02.02_REC.png" alt="Strategy">
+        <div class="card-body">
+            <h3>$10K Strategy</h3>
+            <p>Fundraising campaign for hospitals.</p>
+        </div>
+    </div>
 
-        <a href="https://www.instagram.com/healingforhomeproject/" target="_blank" class="card">
-            <img src="impact.png" alt="Impact">
-            <div class="card-body">
-                <h3>On-Ground Impact</h3>
-                <p>Direct supply distribution and transparency updates.</p>
-            </div>
-        </a>
+    <div class="card">
+        <img src="15.02.2026_23.00.17_REC.png" alt="Impact">
+        <div class="card-body">
+            <h3>On-Ground Impact</h3>
+            <p>Direct supply distribution updates.</p>
+        </div>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 | Elona Musliu</p>
+    <p>© 2026 | Elona Musliu Portfolio</p>
 </footer>
 
 </body>
