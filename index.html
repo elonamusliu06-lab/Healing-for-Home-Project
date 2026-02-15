@@ -4,36 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
-    <title>Marketing Portfolio | Elona Musliu</title>
+    <title>Marketing Portfolio</title>
     <style>
-        /* বেসিক স্টাইল */
         * { box-sizing: border-box; }
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            background-color: #0d0d0d; 
-            color: #ffffff; 
-            text-align: center;
-        }
-
-        header { 
-            background: #e63946; 
-            padding: 50px 20px; 
-            border-bottom: 5px solid #fff; 
-        }
-        header h1 { margin: 0; font-size: 2rem; }
-
-        .container { 
-            max-width: 1200px; 
-            margin: 40px auto; 
-            padding: 0 15px; 
-        }
-
-        /* কার্ড গ্যালারি */
+        body { font-family: sans-serif; margin: 0; background-color: #0d0d0d; color: #fff; text-align: center; }
+        header { background: #e63946; padding: 40px 15px; border-bottom: 5px solid #fff; }
+        .container { padding: 20px; max-width: 1200px; margin: auto; }
+        
         .gallery { 
             display: flex; 
             flex-wrap: wrap; 
-            gap: 25px; 
+            gap: 20px; 
             justify-content: center; 
         }
 
@@ -43,27 +24,20 @@
             overflow: hidden; 
             border: 1px solid #333; 
             width: 100%; 
-            max-width: 350px; /* মোবাইলের জন্য পারফেক্ট সাইজ */
-            transition: transform 0.3s ease;
+            max-width: 350px; /* ল্যাপটপে ৩টি পাশাপাশি দেখাবে, মোবাইলে ১টি */
         }
-        .card:hover { transform: translateY(-5px); border-color: #e63946; }
 
-        /* ছবিগুলো সব ডিভাইসে ফিট হবে */
         .card img { 
             width: 100%; 
             height: 250px; 
             object-fit: cover; 
             display: block;
-            background: #222;
         }
 
-        .card-body { padding: 20px; text-align: left; }
-        .card-body h3 { color: #e63946; margin: 0 0 10px 0; font-size: 1.2rem; }
-        .card-body p { font-size: 0.95rem; color: #ccc; margin: 0; line-height: 1.5; }
+        .card-body { padding: 15px; text-align: left; }
+        .card-body h3 { color: #e63946; margin: 0 0 10px; }
+        .card-body p { font-size: 14px; color: #ccc; }
 
-        footer { padding: 40px; color: #555; font-size: 0.9rem; }
-
-        /* ল্যাপটপ/ডেস্কটপের জন্য বিশেষ এডজাস্টমেন্ট */
         @media (min-width: 768px) {
             .card { width: calc(33.33% - 20px); }
         }
@@ -82,7 +56,7 @@
             <img src="story.png" alt="Heritage">
             <div class="card-body">
                 <h3>Heritage & Branding</h3>
-                <p>Building trust through historical storytelling and legacy.</p>
+                <p>Building trust through historical storytelling.</p>
             </div>
         </div>
 
@@ -90,7 +64,7 @@
             <img src="campaign.png" alt="Strategy">
             <div class="card-body">
                 <h3>$10K Strategy</h3>
-                <p>Digital fundraising management for healthcare support.</p>
+                <p>Digital fundraising management for healthcare.</p>
             </div>
         </div>
 
@@ -98,15 +72,12 @@
             <img src="impact.png" alt="Impact">
             <div class="card-body">
                 <h3>On-Ground Impact</h3>
-                <p>Direct supply distribution and transparency updates.</p>
+                <p>Direct supply distribution and transparency.</p>
             </div>
         </div>
     </div>
 </div>
 
-<footer>
-    <p>© 2026 | Elona Musliu Portfolio</p>
-</footer>
-
+<footer><p>© 2026 | Elona Musliu</p></footer>
 </body>
 </html>
